@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const Header = styled.h1`
   text-align: center;
   margin-top: 120px;
@@ -21,4 +20,6 @@ export const Container = styled.div`
 export const card = {
   marginTop: "10px",
   marginBottom: "50px",
+  display:"flex",
+  
 };

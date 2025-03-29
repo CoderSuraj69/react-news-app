@@ -19,6 +19,6 @@ export const Container = styled.div`
 `;
 
 export const card = {
-  marginTop: "10px",
+  marginTop: "50px",
   marginBottom: "50px",
 };
