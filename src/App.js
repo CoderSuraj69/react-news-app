@@ -2,10 +2,10 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import NavBar from "./components/NavBar/NavBar";
 import News from "./components/News/News";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { router } from "./config/config";
 import Search from "./components/Search/Search";
-
+import NewsLandingPage from "./components/landingpage/NewsLandingPage";
 
 function App() {
   return (
@@ -28,6 +28,8 @@ function App() {
             />
           ))}
           <Route path="/search/:query" element={<Search />} />
+          {/* Add a landing page route if needed */}
+          <Route path="/" element={<NewsLandingPage />} />
         </Routes>
       </Router>
     </>
